@@ -1,5 +1,5 @@
 # sol
-Simple proof of concept to simulate how an oil leak leaks down the hill
+Simple proof of concept to simulates how oil leaks down the hill using altimetry raster
 
 
 
