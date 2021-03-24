@@ -7,8 +7,6 @@ Simple proof of concept to simulates how oil leaks down the hill using altimetry
 
 
 #### Heroku Static Deploy using ngnix-alpine
-    heroku stack:set container -a oil-leak
-    heroku logs --tail -a oil-leak
     heroku login
     docker ps
     heroku container:login
