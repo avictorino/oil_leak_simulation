@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <title>Leak Oil Surface</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <body>
+
+    <div class="container">
+        <div class="page-header">
+          <h1>Leak Oil Surface   <small><a href="https://github.com/avictorino/sol" target="_blank">Github project</a></small></h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10">
+
+                <div class="col-sm-5">
+                    <label for="gallons" class="control-label">Galons:</label>
+                    <input type="number" class="form-control" id="gallons" min="1" max="10000">
+                </div>
+                <div class="col-sm-5">
+                    <label for="pixel_offset" class="control-label">Pixel offset:</label>
+                    <input type="number" class="form-control" id="pixel_offset" min="2" max="10">
+                </div>
+                <div class="col-sm-5">
+                    <label for="pixel_offset" class="control-label">Axis X:</label>
+                    <input type="number" id="posx" readonly class="form-control" id="inputEmail3" placeholder="" value="0">
+                </div>
+                <div class="col-sm-5">
+                    <label for="pixel_offset" class="control-label">Axis Y:</label>
+                    <input type="number" id="posy" readonly class="form-control" id="inputEmail3" placeholder="" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10">
+                <h3 class="help-block" style="margin-left: 15px;">click on the image to start the simulation</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <a id="clear" style="margin-left:15px;margin-bottom: 15px;" class="btn btn-primary">Clear Image</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-5">
+                    <canvas id="canvas" style="cursor:crosshair; width: 300px; height: 300px; position: relative; top:0px; left:0px;"></canvas>
+                </div>
+                <div class="col-sm-3">
+                    <table class="table">
+                        <caption>Altitude scale:</caption>
+                        <tr>
+                            <td style="background-color: white;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                350mt
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #bdbdbd;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                300mt
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #999;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                150mt
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #666;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                100mt
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #333;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                50mt
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #000;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                Sea level
+                            </td>
+                        </tr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img id="image" src="altimetry2.jpg" style="display: none;width: 300px; height: 300px">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="httpsanonymous"></script>
+    <script src="script.js"></script>
+    </body>
+
+</html>
