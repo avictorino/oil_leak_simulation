@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: nginx
+  web: /etc/init.d/nginx start
